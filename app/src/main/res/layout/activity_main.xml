@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <RelativeLayout
+        style="@style/Item">
+        <TextView
+            style="@style/ItemTitle"
+            android:text="屏幕录制服务" />
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btn_stop"
+            android:layout_marginEnd="5dp"
+            android:text="启动" />
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="停止" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Item">
+        <TextView
+            style="@style/ItemTitle"
+            android:text="屏幕录制服务类型" />
+        <RadioGroup
+            android:id="@+id/rg_service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+            <RadioButton
+                android:id="@+id/rb_screenshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/btn_stop"
+                android:text="截图" />
+            <RadioButton
+                android:id="@+id/rb_projection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="投屏" />
+            <RadioButton
+                android:id="@+id/rb_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="录屏" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Item">
+        <TextView
+            style="@style/ItemTitle"
+            android:text="截图弹窗" />
+        <Button
+            android:id="@+id/btn_show_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btn_hide_screenshot"
+            android:layout_marginEnd="5dp"
+            android:text="显示" />
+        <Button
+            android:id="@+id/btn_hide_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="隐藏" />
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/Item">
+        <TextView
+            style="@style/ItemTitle"
+            android:text="投屏弹窗" />
+        <Button
+            android:id="@+id/btn_show_projection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btn_hide_projection"
+            android:layout_marginEnd="5dp"
+            android:text="显示" />
+        <Button
+            android:id="@+id/btn_hide_projection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="隐藏" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Item">
+        <TextView
+            style="@style/ItemTitle"
+            android:text="投屏弹窗大小" />
+        <RadioGroup
+            android:id="@+id/rg_projection_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+            <RadioButton
+                android:id="@+id/rb_scale_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/btn_stop"
+                android:text="1/2" />
+            <RadioButton
+                android:id="@+id/rb_scale_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="1/3" />
+            <RadioButton
+                android:id="@+id/rb_scale_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="1/4" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Item">
+        <TextView
+            style="@style/ItemTitle"
+            android:text="录屏弹窗" />
+        <Button
+            android:id="@+id/btn_show_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btn_hide_video"
+            android:layout_marginEnd="5dp"
+            android:text="显示" />
+        <Button
+            android:id="@+id/btn_hide_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="隐藏" />
+    </RelativeLayout>
+</LinearLayout>
